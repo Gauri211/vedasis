@@ -16,7 +16,7 @@ const Navbar = () => {
           <h2>ChethanB</h2>
           <p style={{color: 'grey', margin: 0}}>Brand</p>
         </div>
-        <BiChevronDown size={'30px'}/>
+          <BiChevronDown size={'40px'}/>
       </div>
     </div>
   );

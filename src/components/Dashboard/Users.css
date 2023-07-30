@@ -35,7 +35,6 @@
   .search {
     text-align: center;
     align-items: center;
-    margin-left: 10%;
     display: flex;
   }
   .search-btn {
@@ -48,6 +47,7 @@
     color: rgb(107, 107, 107);
     letter-spacing: 1px;
     margin-left: 10px;
+    cursor: pointer;
   }
   input[type='text'] {
     padding: 20px;
@@ -62,6 +62,7 @@
   .users-nav {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
 
   /* Style for the list container */
@@ -95,14 +96,23 @@ li:hover {
 }
 
 .download-btn {
+  display: flex;
   background-color: white;
-  padding: 18px 25px;
+  padding: 10px 25px;
   font-size: 24px;
   font-weight: 500;
   border: 0;
   border-radius: 50px;
   color: grey;
   letter-spacing: 1px;
+  cursor: pointer;
   box-shadow: 1px 2px lightgrey;
+  align-items: center;
+}
+
+@media(max-width: 780px) {
+  .users-nav {
+    flex-direction: column;
+  }
 }
   

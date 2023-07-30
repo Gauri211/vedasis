@@ -36,6 +36,7 @@ const Users = () => {
   return (
     <div className="user-table">
       <div className='users-nav'>
+        <div style={{display: 'flex'}}>
       <div className='users-tabs'>
         <ul class="horizontal-list">
           <li class="blue-gradient">Users</li>
@@ -45,9 +46,10 @@ const Users = () => {
         </ul>
       </div>
       <div>
-        <HiArrowPath style={{fontSize: '30px', margin: 20}}/>
+        <HiArrowPath style={{fontSize: '30px', margin: 20, cursor: 'pointer'}}/>
       </div>
       <button className='download-btn'><HiOutlineArrowDownTray />  Download</button>
+      </div>
       <div className="search">
         <input
           type="text"
@@ -56,7 +58,7 @@ const Users = () => {
           onChange={handleSearchChange}
         />
         <button className='search-btn'>Search</button>
-        <BiFilter style={{ color: '#444444', margin: '20' }} size={'70px'}/>
+        <BiFilter style={{ color: '#444444', margin: '20', cursor: 'pointer' }} size={'70px'}/>
       </div>
       </div>
       
