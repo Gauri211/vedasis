@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { BiChevronDown } from 'react-icons/bi';
-import { Navigate, useNavigate } from 'react-router-dom';  // To redirect users after logout
+import { useNavigate } from 'react-router-dom';  // To redirect users after logout
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
