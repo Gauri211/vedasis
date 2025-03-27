@@ -1,118 +1,153 @@
+/* General Styles */
 .user-table {
-    padding: 20px;
-    font-size: 26px;
+  font-size: 16px; /* Slightly smaller font for mobile */
+}
+
+h1 {
+  text-align: center;
+}
+
+.table-div {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse; /* Ensures no space between table cells */
+}
+
+th {
+  color: grey;
+  font-weight: 600;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  font-weight: 550;
+  color: rgb(65, 65, 65);
+}
+
+.search {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-btn {
+  background-color: linear-gradient(to right, #007bff, #00c3ff);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+input[type='text'] {
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 18px;
+  color: grey;
+}
+
+.users-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  width: 40px;
+  padding: 5px 12px;
+  margin: 0 5px;
+  background-color: #2f8ee7;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pagination button:hover {
+  background-color: #0fb137;
+}
+
+.pagination button.active {
+  background-color: #0fb137;
+  color: white;
+  font-weight: bold;
+}
+
+.upbtn, .downbtn {
+  margin-left: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+  color:black;
+  ;
+}
+
+/* Mobile Styles */
+@media(max-width: 780px) {
+  .user-table {
+    font-size: 14px; /* Smaller font for mobile screens */
   }
-  
-  h1 {
-    text-align: center;
+
+  .search {
+    flex-direction: column;
+    align-items: stretch;
   }
-  
+
+  .search-btn {
+    margin-left: 0px;
+  }
+
+  input[type='text'] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .pagination {
+    margin-top: 10px;
+  }
+
+  .pagination button {
+    font-size: 14px;
+  }
+
   .table-div {
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
   }
 
   table {
-    width: 100%;
-    margin-top: 20px;
+    min-width: 600px; /* Ensure the table is scrollable on mobile */
   }
-  
-  th {
-    color: grey;
-  }
-  
+
   th, td {
-    padding: 20px;
-    text-align: left;
-  }
-  
-  td {
-    font-weight: 550;
-    color: rgb(65, 65, 65);
-  }
-  
-  .search {
-    text-align: center;
-    align-items: center;
-    display: flex;
-  }
-  .search-btn {
-    background-color: white;
-    padding: 18px 25px;
-    font-size: 24px;
-    font-weight: 500;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    color: rgb(107, 107, 107);
-    letter-spacing: 1px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  input[type='text'] {
-    padding: 20px;
-    width: 100%;
-    max-width: 500px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 25px;
-    color: grey;
+    padding: 10px;
   }
 
-  .users-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  /* Style for the list container */
-.users-tabs {
-  display: flex;
-  justify-content: center; 
-}
-
-.horizontal-list {
-  list-style: none;
-  display: flex;
-  font-weight: 500;
-  align-items: center;
-  color: grey;
-  background-color: #fff;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-li {
-  margin-right: 30px;
-}
-li:hover {
-  cursor: pointer;
-}
-.blue-gradient {
-  background: linear-gradient(to right, #007bff, #00c3ff);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.download-btn {
-  display: flex;
-  background-color: white;
-  padding: 10px 25px;
-  font-size: 24px;
-  font-weight: 500;
-  border: 0;
-  border-radius: 50px;
-  color: grey;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: 1px 2px lightgrey;
-  align-items: center;
-}
-
-@media(max-width: 780px) {
-  .users-nav {
-    flex-direction: column;
+  .upbtn, .downbtn {
+    font-size: 16px; /* Make sorting icons smaller */
   }
 }
-  

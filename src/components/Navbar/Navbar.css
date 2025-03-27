@@ -1,35 +1,77 @@
 
   .nav-profile {
-    height: 100px;
+    height: 60px;
     background-color: #fff;
     position: sticky;
     top: 0;
     border-bottom: 1px solid lightgrey;
   }
 
-  .nav-profile:hover {
-    cursor: pointer;
-  }
   .user-info {
     display: flex;
     justify-content: space-between;
-    width: 280px;
     background-color: #f5f5f5;
     border-radius: 50px;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     float: right;
-    margin: 10px 20px;
+    margin: 2px 20px;
   }
   
   h2{
+    font-size: large;
     margin: 0px;
   }
 
   .user-photo {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 3%;
+    background: #636363;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropdown-menu button {
+    background-color: #FF4B2B;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: #ff7f5d;
+  }
+  
+  .user-details {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .user-details p {
+    margin: 0;
+    padding: 5px;
   }
   

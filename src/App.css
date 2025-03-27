@@ -7,68 +7,24 @@
   box-sizing: border-box;
 }
 
-.app-container {
-  display: flex;
-}
-
-.sidebar {
-  width: 100px;
-  background-color: white;
-  border-right: 1px solid rgb(207, 207, 207);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-  position: fixed; 
-  top: 0; 
-  bottom: 0;
-  z-index: 1;
-}
-
-.sidebar img {
-  width: 45px;
-  height: 45px;
-  margin-top: 10px;
-  margin-bottom: 80px;
-}
-
-.home-icon {
-  font-size: 50px;
-  background: linear-gradient(to right, #007bff, #00c3ff);
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 30px;
-  color: white;
-}
-.home-icon:hover {
-  cursor: pointer;
-}
-.hash-icon {
-  font-size: 40px;
-  color: rgb(113, 113, 113);
-}
-.hash-icon:hover {
-  cursor: pointer;
-}
-.setting-icon {
-  font-size: 40px;
-  color: rgb(113, 113, 113);
-  position: absolute;
-  bottom: 50px;
-}
-.setting-icon:hover {
-  cursor: pointer;
-}
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: rgb(235, 244, 246);
+  color: black;
 }
 
 .content {
   flex: 1;
   padding: 20px;
-  margin-left: 100px;
+  margin-left: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    margin-left: 0;
+  }
+  
 }
 
